@@ -16,10 +16,8 @@ export function TaskListView({ taskList }: TaskListViewProps) {
   })
 
   return (
-    <header className={Styles["container"]}>
-      <ul className={Styles["task-list"]}>
-        {taskView}
-      </ul>
-    </header>
+    <ul className={Styles["task-list"]}>
+      {taskView}
+    </ul>
   );
 }
