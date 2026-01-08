@@ -1,14 +1,15 @@
 import { LogOut } from "lucide-react";
 import { HeaderProps } from "./Header.types";
-import Styles from "./Header.module.css"
+import Styles from "./Header.module.css";
+import { HeaderTitle } from "../HeaderTitle";
 
 export function Header({ title, onRightClick }: HeaderProps) {
   return (
     <header className={Styles.header}>
       <div />
-      <h2 className={Styles.title}>
-        {title}
-      </h2>
+      <div className={Styles.title}>
+        <HeaderTitle>{title}</HeaderTitle>
+      </div>
       <button
         className={Styles.iconButton}
         onClick={onRightClick}
