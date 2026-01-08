@@ -1,0 +1,20 @@
+.button {
+  max-width: 100px;
+  background-color: transparent;
+  border: solid 2px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 15px;
+}
+
+.icon {
+  max-width: 30px;
+}
