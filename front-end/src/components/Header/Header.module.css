@@ -5,18 +5,13 @@
   padding: 0 12px;
 }
 
-.title {
+.left {
+}
+
+.center {
   justify-self: center;
 }
 
-.iconButton {
-  background: transparent;
-  border: none;
-  padding: 8px;
-  border-radius: 4px;
-}
-
-.iconButton:hover {
-  background-color: #e8e8e8;
-  cursor: pointer;
+.right {
+  justify-self: end;
 }
