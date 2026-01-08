@@ -5,20 +5,16 @@ import Styles from "./Header.module.css"
 export function Header({ title, onRightClick }: HeaderProps) {
   return (
     <header className={Styles.header}>
-      <div>
-      </div>
-      <div className={Styles.center}>
-        <h2>{title}</h2>
-      </div>
-      <div className={Styles.right}>
-        {
-          onRightClick && (
-            <button className={Styles.rightButton}>
-              <LogOut />
-            </button>
-          )
-        }
-      </div>
+      <div />
+      <h2 className={Styles.title}>
+        {title}
+      </h2>
+      <button
+        className={Styles.iconButton}
+        onClick={onRightClick}
+        aria-label="Logout">
+        <LogOut />
+      </button>
     </header>
   );
 }

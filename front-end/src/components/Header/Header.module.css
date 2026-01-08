@@ -1,30 +1,22 @@
 .header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
+  padding: 0 12px;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.title {
+  justify-self: center;
 }
 
-.right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-}
-
-.rightButton {
-  flex-grow: 1;
-  background-color: transparent;
+.iconButton {
+  background: transparent;
   border: none;
+  padding: 8px;
+  border-radius: 4px;
 }
 
-.rightButton:hover {
+.iconButton:hover {
   background-color: #e8e8e8;
   cursor: pointer;
-  border-radius: 4px;
 }
